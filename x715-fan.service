@@ -1,0 +1,13 @@
+[Unit]
+Description=Daemon to monitor and control fan speed
+
+[Service]
+ExecStart=/usr/local/bin/x715-fan.sh
+Type=simple
+Restart=always
+
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target
